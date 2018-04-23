@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>qm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <h1>Quine-McCluskey Algorthim</h1>
+    <p>QM can be used to minimize a boolean function. See below for a representation of the following value:
+        <i>Y(A, B, C, D) = &#931;m(
+            <span id="MINTERMS"></span>)</i>
+    </p>
+    <p>You can change the values from the sigman in the dropdown, the max is 15. You can also press the button to randomly generate
+        values instead. You can also add values and reset the values.
+        <br/>
+        <button onclick="rando()">Random Numbers</button>
+        |
+        <button onclick="add()">+</button>
+        <button onclick="remove()">-</button>
+        |
+        <button onclick="clearValues()">Clear Values</button>
+    </p>
+    <button onclick="run()">Display Prime Implicant(s)</button>
+    <div id="pi"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.4.0/lodash.js"></script>
+
+<script src="./main.js"></script>
+<script src="./qm.js"></script>
+
+</html>
